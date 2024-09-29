@@ -13,16 +13,14 @@ It calculates the sum, product, and degrees of the sum and product of any two po
 ## Requirements
 - Rust installed on your machine. (If Rust is not installed, follow the instructions on the [official Rust website](https://www.rust-lang.org/tools/install) to install it).
 ## Example Polynomials
-The two polynomials are defined as follows:
-\begin{align*}
-P(x) &= 5x^2-4x + 2\\
-Q(x) &= x^3-2x^2 + 5
-\end{align*}
+The two polynomials $P(x) = 5x^2-4x + 2$ and $Q(x) = x^3-2x^2 + 5$
+## Example Output:
 >```
->The Pedersen hash is: 8
-## How It Works:
-- **Modular Exponentiation:** The function `mod_exp` computes each generator raised to the power of the corresponding value modulo the group modulus.
-- **Pedersen Hash Calculation:** The result of each exponentiation is multiplied together modulo `p`. This result is the Pedersen hash.
+>P(x) + Q(x) = [7, -4, 3, 1]
+>P(x) * Q(x) = [10, -20, 21, 10, -14, 5]
+>deg(P + Q) = 3
+>deg(P * Q) = 5
+
 ## Contributing
   - If you intend to contribute to this project, fork the repository and make a pull request.
 
