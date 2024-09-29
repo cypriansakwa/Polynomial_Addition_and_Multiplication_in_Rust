@@ -1,0 +1,6 @@
+[package]
+name = "Polynomial_Addition_and_Multiplication_in_Rust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
