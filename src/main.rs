@@ -1,8 +1,7 @@
 fn main() {
     // Define polynomials P(x) = 5x^2 - 4x + 2 and Q(x) = x^3 - 2x^2 + 5
-    let p = vec![2, -4, 5];  // Coefficients of P(x): 2 + (-4)x + 5x^2
+    let p = vec![2,-4,5];  // Coefficients of P(x): 2 + (-4)x + 5x^2
     let q = vec![5, 0, -2, 1]; // Coefficients of Q(x): 5 + (-2)x^2 + 1x^3
-    
     // Add the polynomials
     let sum = add_polynomials(&p, &q);
     let product = multiply_polynomials(&p, &q);
